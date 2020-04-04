@@ -29,16 +29,22 @@ int main()
                 printf("\r %i : %i : %i", hours,minutes,seconds);
 
                 if (option == 1 && amount <= hours) {
-                    cout << "Cronometro Finalizado" << endl;
+                    cout << "\nCronometro Finalizado" << endl;
+                    PlaySound(TEXT("beep.wav"), NULL, SND_ALIAS);
+                    system("pause");
                     return 0;
                 }
 
                 else if (option == 2 && amount <= minutes) {
-                    cout << "Cronometro Finalizado" << endl;
+                    cout << "\nCronometro Finalizado" << endl;
+                    PlaySound(TEXT("beep.wav"), NULL, SND_ALIAS);
+                    system("pause");
                     return 0;
                 }
                 else if (option == 3 && amount <= seconds) {
-                    cout << " Cronometro Finalizado" << endl;
+                    cout << "\nCronometro Finalizado" << endl;
+                    PlaySound(TEXT("beep.wav"), NULL, SND_ALIAS);
+                    system("pause");
                     return 0;
                 }
 
